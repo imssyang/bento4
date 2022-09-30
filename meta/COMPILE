@@ -1,0 +1,10 @@
+
+mkdir cmakebuild; cd cmakebuild
+
+cmake -Wno-dev -G "Unix Makefiles" \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DCMAKE_INSTALL_PREFIX=/opt/bento4 \
+  ..
+
+make -j8
+make install
